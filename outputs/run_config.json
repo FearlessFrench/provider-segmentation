@@ -1,0 +1,35 @@
+{
+  "use_mock": false,
+  "n_samples": 7259,
+  "id_col": "professional_id",
+  "features": [
+    "total_bookings",
+    "total_service_provided",
+    "avg_rating",
+    "total_income",
+    "total_work_hour",
+    "latest_month_rating",
+    "latest_diff_avg_booking",
+    "booking_std",
+    "rating_std",
+    "favorite_cleaning_day_Monday",
+    "favorite_cleaning_day_Tuesday",
+    "favorite_cleaning_day_Wednesday"
+  ],
+  "scaler": "RobustScaler",
+  "apply_pca": true,
+  "pca_components": 4,
+  "algo": "kmeans",
+  "params": {
+    "k": 3,
+    "gmm_components": 3,
+    "gmm_cov": "full",
+    "agglo_n": 3,
+    "agglo_linkage": "ward",
+    "dbscan_eps": 0.7,
+    "dbscan_min_samples": 10,
+    "spectral_n": 3,
+    "spectral_affinity": "nearest_neighbors"
+  },
+  "random_state": 42
+}
